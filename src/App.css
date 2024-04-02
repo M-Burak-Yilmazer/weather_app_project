@@ -1,38 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  background-image: url("./images/Background.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 1px;
+}
+
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  flex-direction: column;
+}
+.App img {
+  opacity: 0.8;
+}
+.App .title {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-align: center;
+  margin-top: 1rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title span {
+  color: #8fb2f5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App p {
+  color: #3b3b54;
+  font-size: 14px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+  background-color: #22222f;
+  padding-left: 13px;
+  caret-color: #8fb2f5;
+  color: white;
+  letter-spacing: 1px;
+}
+.spinner {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 20px;
+}
+.list {
+    color:white;
+  padding: 0;
+  margin-top: 10px;
+  list-style-type: none;
+  width: 300px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 3px;
+}
+.list li {
+  background-color: #3b3b54;
+  width: 300px;
+  margin: 0;
+padding-top:6px;
+  padding-left: 12px;
+  height: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.list li:first-child {
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list li:last-child {
+  border-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
